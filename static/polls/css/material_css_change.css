@@ -1,0 +1,97 @@
+.mdl-layout__drawer > .collapsible {
+    margin-left: 8px;
+    margin-top: 10px;
+    box-shadow: none;
+    border: none;
+}
+
+.mdl-layout__drawer .collapsible-header {
+    background: rgba(0,0,0,0);
+    border: none;
+    font-weight: 800;
+    color: #000;
+    height: 50px;
+    font-size: large;
+}
+
+.mdl-layout__drawer .collapsible-body {
+    background: rgba(0,0,0,0);
+    border: none;
+}
+
+.mdl-layout__drawer .material-icons {
+    color: #757575;
+    margin-right: 30px;
+}
+
+.mdl-layout__drawer .mdl-button {
+    width: 100%;
+    height: 50px;
+    text-indent: 0px;
+    text-align: left;
+    color: #616161;
+    font-weight: 300;
+}
+
+.apply-button > .material-icons {
+    color: rgb(66,133,244);
+    padding-left: 8px;
+}
+
+.state-button > .material-icons {
+    color: rgb(236,164,3);
+    padding-left: 8px;
+}
+
+.history-button > .material-icons {
+    color: rgb(15,157,88);
+    padding-left: 8px;
+}
+
+.dividing-line {
+    height:1px;
+    width:100%;
+    background:#e0e0e0;
+    overflow:hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mdl-layout__content {
+    background: #eeeeee;
+}
+
+.mdl-layout__content .collapsible {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 60%;
+    /*margin: auto;*/
+    vertical-align: middle;
+    /*text-align: center;*/
+    horiz-align: center;
+}
+
+.click-background {
+    background: rgba(0,0,0,0.15);
+}
+
+.unclick-background {
+    background: rgba(0,0,0,0);
+}
+
+.mysite-blue {
+    background: rgb(66,133,244);
+}
+
+.mysite-orange {
+    background: rgb(236,164,3);
+}
+
+.mysite-green {
+    background: rgb(15,157,88);
+}
+
+.mdl-button:hover {
+    background-color: rgba(0,0,0,0.05);
+}

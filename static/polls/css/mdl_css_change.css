@@ -1,9 +1,10 @@
 .mdl-layout__drawer {
-    position: relative;
+    position: fixed;
+    float: left;
     border-right: hidden;
     box-shadow: none;
-    background: rgba(255,255,255,0);
-    /*fill-opacity: 80;*/
+    background: rgba(100,100,100,0);
+    top: 64px;
 }
 
 .mdl-layout__header {

@@ -87,3 +87,13 @@ TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+# 邮件配置
+EMAIL_HOST = 'smtp.gmail.com'                   # SMTP地址
+EMAIL_PORT = 587                                 # SMTP端口
+EMAIL_HOST_USER = 'spasserby78@gmail.com'       # 我自己的邮箱
+EMAIL_HOST_PASSWORD = 'mygame123'               # 我的邮箱密码
+# EMAIL_SUBJECT_PREFIX = u'[叉院物资管理系统]'      # 为邮件Subject-line前缀,默认是'[django]'
+EMAIL_USE_TLS = True                            # 与SMTP服务器通信时，是否启动TLS链接(安全链接)。默认是false
+#
+# SERVER_EMAIL = '569078986@qq.com'

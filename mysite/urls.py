@@ -4,5 +4,6 @@ from django.contrib import admin
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'mysite.views.index'),
+    url(r'^download', 'mysite.views.download_excel'),
     url(r'^polls/', include('polls.urls')),
 )

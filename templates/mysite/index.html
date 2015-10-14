@@ -3,8 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
+
+  <link rel="stylesheet" href="/static/mdl/material.css" />
+  <link rel="stylesheet" href="/static/mdl/material_icon.css" />
+  <script src="/static/jquery/jquery-2.1.4.js"></script>
+  <script src="/static/mdl/material.js"></script>
+
+  <style type="text/css">
+    button {
+      margin-left: 30px;
+    }
+    .title {
+      margin-left: 30px;
+    }
+    a {
+      text-decoration:none;
+    }
+  </style>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".upload").click(function() {
+        var fd = new FormData(document.getElementById("fileinfo"));
+        fd.append("CustomField", "This is some extra data");
+        $.ajax({
+          url: "stash.php",
+          type: "POST",
+          data: fd,
+          processData: false,  // tell jQuery not to process the data
+          contentType: false   // tell jQuery not to set contentType
+        });
+      });
+    });
+  </script>
+
 </head>
 <body>
-<h1>Hello World</h1>
+<h1 class="title">Hello World</h1>
+<a href="/download" download="test.txt">
+  <button  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+    download
+  </button>
+</a>
+
+
+
 </body>
 </html>

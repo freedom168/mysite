@@ -4,10 +4,10 @@ from django.core.mail import send_mail
 from smtplib import SMTPException
 import os
 
-def sendMail():
+def sendMail(request):
     print('---------------start send---------------')
     try:
-        send_mail('[test django]', 'hello', 'googolplex_alaph@126.com', ['569078986@qq.com'], fail_silently=False)
+        send_mail('[test django]', 'hello', 'googolplex_alaph@sina.com', ['569078986@qq.com'], fail_silently=False)
     except SMTPException:
         print('error')
     print('----------------end send----------------')

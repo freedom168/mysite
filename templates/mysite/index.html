@@ -22,17 +22,12 @@
   </style>
 
   <script type="text/javascript">
-    $(document).ready(function() {
-      $(".upload").click(function() {
-        var fd = new FormData(document.getElementById("fileinfo"));
-        fd.append("CustomField", "This is some extra data");
-        $.ajax({
-          url: "stash.php",
-          type: "POST",
-          data: fd,
-          processData: false,  // tell jQuery not to process the data
-          contentType: false   // tell jQuery not to set contentType
-        });
+    $(window).load(function() {
+      $("#send-mail").click(function() {
+        $.get("/sendMail",
+          function(data,status){
+            alert("数据：" + data + "\n状态：" + status);
+          });
       });
     });
   </script>
@@ -45,7 +40,9 @@
     download
   </button>
 </a>
-
+<button id="send-mail" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  send a mail
+</button>
 
 
 </body>
